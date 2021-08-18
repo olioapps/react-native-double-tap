@@ -52,7 +52,7 @@ export default class DoubleTap extends Component {
 
   render() {
     return (
-      <TouchableOpacity onPress={this._onTap}>
+      <TouchableOpacity onPress={this._onTap} style={this.props.style}>
         {this.props.children}
       </TouchableOpacity>
     );
